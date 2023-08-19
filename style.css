@@ -1,0 +1,54 @@
+* {
+    border: 1px solid red;
+}
+
+#navbar {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    width: 90%;
+    margin: auto;
+}
+
+#row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#number {
+    padding-top: 10%;
+    position: relative;
+    height: 0;
+    width: 10%;
+}
+
+#num {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    height: 100px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
