@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
+    <script src="field.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <div id="navbar">
+    <div class="navbar">
         <ul>
             <li><a href="url.tld">This</a></li>
             <li><a href="url.tld">Is</a></li>
@@ -16,43 +14,42 @@
             <li><a href="url.tld">Placeholder for a Navbar</a></li>
         </ul>
     </div>
-
-    <div id="game">
-        <h1>gameplay</h1>
-        <div id="row">
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">2</div></button>
-            <button id="number"><div id="num">3</div></button>
-            <button id="number"><div id="num">4</div></button>
-            <button id="number"><div id="num">5</div></button>
-            <button id="number"><div id="num">6</div></button>
-            <button id="number"><div id="num">7</div></button>
-            <button id="number"><div id="num">8</div></button>
-            <button id="number"><div id="num">9</div></button>
+    <h1>gameplay</h1>
+    <div id="game" class="game">
+        <div data-y="0" class="row">
+            <button data-x="0" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="1" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">2</div></button>
+            <button data-x="2" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">3</div></button>
+            <button data-x="3" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">4</div></button>
+            <button data-x="4" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">5</div></button>
+            <button data-x="5" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">6</div></button>
+            <button data-x="6" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">7</div></button>
+            <button data-x="7" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">8</div></button>
+            <button data-x="8" data-y="0" class="number" onclick="buttonClick(this)"><div class="num">9</div></button>
         </div>
-        <div id="row">
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">0</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">2</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">3</div></button>
-            <button id="number"><div id="num">1</div></button>
+        <div data-y="1" class="row">
+            <button data-x="0" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="1" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">0</div></button>
+            <button data-x="2" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="3" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="4" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="5" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">2</div></button>
+            <button data-x="6" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="7" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">3</div></button>
+            <button data-x="8" data-y="1" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
         </div>
-        <div id="row">
-            <button id="number"><div id="num">4</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">5</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">6</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">7</div></button>
-            <button id="number"><div id="num">1</div></button>
-            <button id="number"><div id="num">8</div></button>
+        <div data-y="2" class="row">
+            <button data-x="0" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">4</div></button>
+            <button data-x="1" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="2" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">5</div></button>
+            <button data-x="3" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="4" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">6</div></button>
+            <button data-x="5" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="6" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">7</div></button>
+            <button data-x="7" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">1</div></button>
+            <button data-x="8" data-y="2" class="number" onclick="buttonClick(this)"><div class="num">8</div></button>
         </div>
     </div>
+    <button class="button" onclick="addFields()">new Lines</button>
 </body>
-
 </html>

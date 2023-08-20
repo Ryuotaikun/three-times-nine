@@ -2,32 +2,32 @@
     border: 1px solid red;
 }
 
-#navbar {
-    height: 100px;
+.navbar {
+    height: 38px;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-#game {
+.game {
     width: 90%;
     margin: auto;
 }
 
-#row {
+.row {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-#number {
+.number {
     padding-top: 10%;
     position: relative;
     height: 0;
     width: 10%;
 }
 
-#num {
+.num {
     font-size: 3rem;
     position: absolute;
     top: 50%;
@@ -35,8 +35,24 @@
     transform: translate(-50%, -50%);
 }
 
+.button {
+    margin: 10px 10%;
+    float: right;
+}
+
+.selected {
+    background-color: aqua;
+}
+
+.adjacent {
+    background-color: blueviolet;
+}
+
+.inactive {
+    background-color: chocolate;
+}
+
 ul {
-    height: 100px;
     width: 100%;
     list-style-type: none;
     margin: 0;
